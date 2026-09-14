@@ -1,6 +1,6 @@
 name: Gold Price Bot
 
-on:
+"on":
   workflow_dispatch:
   schedule:
     - cron: "0 * * * *"
@@ -8,6 +8,7 @@ on:
 jobs:
   run-bot:
     runs-on: ubuntu-latest
+
     steps:
       - name: Get code
         uses: actions/checkout@v4
